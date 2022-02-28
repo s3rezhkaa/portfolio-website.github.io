@@ -1,80 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+  --header-height: 3rem;
 
-$header-height: 3rem;
+  // ========= Colors ==========
 
-// ========= Colors ==========
+  // HSL color mode
+  --hue-color: 142;
 
-// HSL color mode
-$hue-color: 142;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-$first-color: hsl($hue-color, 69%, 61%);
-$first-color-second: hsl($hue-color, 69%, 61%);
-$first-color-alt: hsl($hue-color, 57%, 53%);
-$first-color-lighter: hsl($hue-color, 92%, 85%);
-$title-color: hsl($hue-color, 8%, 15%);
-$text-color: hsl($hue-color, 8%, 45%);
-$text-color-light: hsl($hue-color, 8%, 65%);
-$input-color: hsl($hue-color, 70%, 96%);
-$body-color: hsl($hue-color, 60%, 99%);
-$container-color: #fff;
-$scroll-bar-color: hsl($hue-color, 12%, 90%);
-$scroll-thumb-color: hsl($hue-color, 12%, 80%);
+  // Font and typography
+  --body-font: 'Poppins', sans-serif;
 
-// Font and typography
-$body-font: 'Poppins', sans-serif;
+  // .5rem = 8px, 1rem = 16px, 1.5rem = 24px...
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 
-// .5rem = 8px, 1rem = 16px, 1.5rem = 24px...
-$big-font-size: 2rem;
-$h1-font-size: 1.5rem;
-$h2-font-size: 1.25rem;
-$h3-font-size: 1.125rem;
-$normal-font-size: .938rem;
-$small-font-size: .813rem;
-$smaller-font-size: .75rem;
+  // ========= Font weight  =========
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-// ========= Font weight  =========
-$font-medium: 500;
-$font-semi-bold: 600;
+  // ========= Margenes bottom  =========
+  // .25rem = 4px, .5rem = 8px, .75rem = 12px ...
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
-// ========= Margenes bottom  =========
-// .25rem = 4px, .5rem = 8px, .75rem = 12px ...
-$mb-0-25: .25rem;
-$mb-0-5: .5rem;
-$mb-0-75: .75rem;
-$mb-1: 1rem;
-$mb-1-5: 1.5rem;
-$mb-2: 2rem;
-$mb-2-5: 2.5rem;
-$mb-3: 3rem;
-
-// ========= z index  =========
-$z-tooltip: 10;
-$z-fixed: 100;
-$z-modal: 1000;
-
+  // ========= z index  =========
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
 //Font size for Large devices
 
 @media screen and (min-width: 968px) {
   :root {
-    $big-font-size: 3rem;
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-    $h3-font-size: 1.25rem;
-    $normal-font-size: 1rem;
-    $small-font-size: .875rem;
-    $smaller-font-size: .813rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
   }
 }
 //================ Variables Dark theme ================
 body.dark-theme {
-  $first-color-second: hsl($hue-color, 30%, 8%);
-  $title-color: hsl($hue-color, 8%, 95%);
-  $text-color: hsl($hue-color, 8%, 75%);
-  $input-color: hsl($hue-color, 29%, 16%);
-  $body-color: hsl($hue-color, 28%, 12%);
-  $container-color: hsl($hue-color, 29%, 16%);
-  $scroll-bar-color: hsl($hue-color, 12%, 48%);
-  $scroll-thumb-color: hsl($hue-color, 12%, 36%);
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
 //================ Button Light/Dark ================
@@ -85,12 +85,12 @@ body.dark-theme {
 
 .change-theme{
   font-size: 1.25rem;
-  color: $title-color;
-  margin-right: $mb-1;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
   cursor: pointer;
 
   &:hover{
-    color: $first-color;
+    color: var(--first-color);
   }
 }
 
@@ -107,16 +107,16 @@ html {
 }
 
 body {
-  margin: 0 0 $header-height 0;
-  font-family: $body-font;
-  font-size: $normal-font-size;
-  background: $body-color;
-  color: $text-color;
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: var(--body-color);
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
-  color: $title-color;
-  font-weight: $font-semi-bold;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 
 }
 
@@ -139,13 +139,13 @@ img {
 }
 
 .section__title {
-  font-size: $h1-font-size;
+  font-size: var(--h1-font-size);
 }
 
 .section__subtitle {
   display: block;
-  font-size: $small-font-size;
-  margin-bottom: $mb-3;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
 }
 
 .section__title, .section__subtitle {
@@ -155,8 +155,8 @@ img {
 //====================== LAYOUT ======================
 .container {
   max-width: 768px;
-  margin-left: $mb-1-5;
-  margin-right: $mb-1-5;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
 .grid {
@@ -169,15 +169,15 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: $z-fixed;
-  background-color: $body-color;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
 }
 
 //====================== NAV ======================
 
 .nav{
   max-width: 968px;
-  height: $header-height;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,11 +185,11 @@ img {
 
 .nav__logo,
 .nav__toggle{
-  color: $title-color;
-  font-weight: $font-medium;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 
   &:hover{
-    color: $first-color;
+    color: var(--first-color);
   }
 }
 
@@ -204,7 +204,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background: $body-color;
+    background: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
     border-radius: 1.5rem 1.15rem 0 0;
@@ -221,12 +221,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: $small-font-size;
-  color: $title-color;
-  font-weight: $font-medium;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 
   &:hover{
-    color: $first-color;
+    color: var(--first-color);
   }
 }
 
@@ -240,10 +240,10 @@ img {
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: $first-color;
+  color: var(--first-color);
 
   &:hover{
-    color: $first-color-alt;
+    color: var(--first-color-alt);
   }
 }
 
@@ -254,7 +254,7 @@ img {
 
 //Active link
 .active-link{
-  color: $first-color;
+  color: var(--first-color);
 }
 
 //Change background header
@@ -281,16 +281,16 @@ img {
 
 .home__social-icon{
   font-size: 1.25rem;
-  color: $first-color;
+  color: var(--first-color);
 
   &:hover{
-    color: $first-color-alt;
+    color: var(--first-color-alt);
   }
 }
 
 .home__blob{
   width: 200px;
-  fill: $first-color;
+  fill: var(--first-color);
 
 }
 
@@ -303,18 +303,18 @@ img {
 }
 
 .home__title{
-  font-size: $big-font-size;
+  font-size: var(--big-font-size);
 }
 
 .home__subtitle{
-  font-size: $h3-font-size;
-  color: $text-color;
-  font-weight: $font-medium;
-  margin-bottom: $mb-0-75;
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
 }
 
 .home__description{
-  margin-bottom: $mb-2;
+  margin-bottom: var(--mb-2);
 }
 
 .home__scroll{
@@ -322,7 +322,7 @@ img {
 }
 
 .home__scroll-button{
-  color: $first-color;
+  color: var(--first-color);
   transition: .3s;
 
   &:hover{
@@ -338,10 +338,10 @@ img {
 }
 
 .home__scroll-name{
-  font-size: $small-font-size;
-  color: $title-color;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
   font-weight: font-medium;
-  margin-right: $mb-0-25;
+  margin-right: var(--mb-0-25);
 }
 
 .home_scroll-arrow{
@@ -351,26 +351,26 @@ img {
 //========= BUTTONS =========
 .button{
   display: inline-block;
-  background: $first-color;
+  background: var(--first-color);
   color: #fff;
   padding: 1rem;
   border-radius: .5rem;
   font-weight: font-medium;
 
   &:hover{
-    background-color: $first-color-alt;
+    background-color: var(--first-color-alt);
   }
 }
 
 .button__icon{
   font-size: 1.25rem;
-  margin-left: $mb-0-5;
+  margin-left: var(--mb-0-5);
   transition: .3s;
 }
 
 .button--white{
   background-color: #fff;
-  color: $first-color;
+  color: var(--first-color);
 
   &:hover{
     background-color: #fff;
@@ -389,11 +389,11 @@ img {
 .button--link{
   padding: 0;
   background-color: transparent;
-  color: $first-color;
+  color: var(--first-color);
 
   &:hover{
     background-color: transparent;
-    color: $first-color-alt;
+    color: var(--first-color-alt);
   }
 }
 
@@ -407,23 +407,23 @@ img {
 
 .about__description{
   text-align: center;
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-2-5);
 }
 
 .about__info{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-2-5);
 }
 
 .about__info-title{
-  font-size: $h2-font-size;
-  font-weight: $font-semi-bold;
-  color: $title-color;
+  font-size: var(--h2-font-siz);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
 }
 
 .about__info-name{
-  font-size: $smaller-font-size;
+  font-size: var(--smaller-font-size);
 }
 
 .about__info-title,
@@ -445,27 +445,27 @@ img {
 .skills__header{
   display: flex;
   align-items: center;
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-2-5);
   cursor: pointer;
 }
 
 .skills__icon,
 .skills__arrow{
   font-size: 2rem;
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .skills__icon{
-  margin-right: $mb-0-75;
+  margin-right: var(--mb-0-75);
 }
 
 .skills__title{
-  font-size: $h3-font-size;
+  font-size: var(--h3-font-size);
 }
 
 .skills__subtitle{
-  font-size: $small-font-size;
-  color: $text-color-light;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
 }
 
 .skills__arrow{
@@ -480,12 +480,12 @@ img {
 .skills__titles{
   display: flex;
   justify-content: space-between;
-  margin-bottom: $mb-0-5;
+  margin-bottom: var(--mb-0-5);
 }
 
 .skills__name{
-  font-size: $normal-font-size;
-  font-weight: $font-medium;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
 }
 
 .skills__bar,
@@ -495,12 +495,12 @@ img {
 }
 
 .skills__bar{
-  background-color: $first-color-lighter;
+  background-color: var(--first-color-lighter);
 }
 
 .skills__percentage{
   display: block;
-  background-color: $first-color;
+  background-color: var(--first-color);
 }
 
 .skills__html{
@@ -546,7 +546,7 @@ img {
 
 .skills__open{
   height: max-content;
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-2-5);
 }
 
 .skills__open .skills__arrow{
@@ -557,22 +557,22 @@ img {
 .qualification__tabs{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: $mb-2;
+  margin-bottom: var(--mb-2);
 }
 
 .qualification__button{
-  font-size: $h3-font-size;
-  font-weight: $font-medium;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
   cursor: pointer;
 
   &:hover{
-    color: $first-color;
+    color: var(--first-color);
   }
 }
 
 .qualification__icon{
   font-size: 1.8rem;
-  margin-right: $mb-0-25;
+  margin-right: var(--mb-0-25);
 }
 
 .qualification__data{
@@ -582,25 +582,25 @@ img {
 }
 
 .qualification__title{
-  font-size: $normal-font-size;
-  font-weight: $font-medium;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
 }
 .qualification__subtitle{
   display: inline-block;
-  font-size: $small-font-size;
-  margin-bottom: $mb-1;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
 }
 
 .qualification__calendar{
-  font-size: $smaller-font-size;
-  color: $text-color-light;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
 }
 
 .qualification__rounder{
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: $first-color;
+  background-color: var(--first-color);
   border-radius: 50%;
 }
 
@@ -608,7 +608,7 @@ img {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: $first-color;
+  background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
 
@@ -621,7 +621,7 @@ img {
 }
 
 .qualification__button.qualification__active{
-  color: $first-color;
+  color: var(--first-color);
 }
 
 //====================== SERVICES ======================
@@ -632,7 +632,7 @@ img {
 
 .services__content{
   position: relative;
-  background-color: $container-color;
+  background-color: var(--container-color);
   padding: 3.5rem .5rem 1.25rem 1.5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgb(0, 0, 0, .15);
@@ -646,19 +646,19 @@ img {
 .services__icon{
   display: block;
   font-size: 1.5rem;
-  color: $first-color;
-  margin-bottom: $mb-1;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
 }
 
 .services__title{
-  font-size: $h3-font-size;
-  margin-bottom: $mb-1;
-  font-weight: $font-medium;
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
 }
 
 .services__button{
   cursor: pointer;
-  font-size: $small-font-size;
+  font-size: var(--small-font-size);
 }
 
 .services__button:hover .button__icon{
@@ -676,7 +676,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
-  z-index: $z-modal;
+  z-index: var(--z-modal);
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -684,7 +684,7 @@ img {
 
 .services__modal-content{
   position: relative;
-  background-color: $container-color;
+  background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -698,9 +698,9 @@ img {
 }
 
 .services__modal-title{
-  font-size: $h3-font-size;
-  font-weight: $font-medium;
-  margin-bottom: $mb-1-5;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
 }
 
 .services__modal-close{
@@ -708,13 +708,13 @@ img {
   top: 1rem;
   right: 1rem;
   font-size: 1rem;
-  color: $first-color;
+  color: var(--first-color);
   cursor: pointer;
 }
 
 .services__modal-icon{
-  color: $first-color;
-  margin-right: $mb-0-25;
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
 }
 
 .active-modal{
@@ -738,12 +738,12 @@ img {
 }
 
 .portfolio__title{
-  font-size: $h3-font-size;
-  margin-bottom: $mb-0-5;
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
 }
 
 .portfolio__description{
-  margin-bottom: $mb-0-75;
+  margin-bottom: var(--mb-0-75);
 }
 
 .portfolio__button:hover .button__icon{
@@ -757,7 +757,7 @@ img {
 
 .swiper-portfolio-icon{
   font-size: 2rem;
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .swiper-button-prev{
@@ -773,7 +773,7 @@ img {
 }
 
 .swiper-pagination-bullet-active{
-  background-color: $first-color;
+  background-color: var(--first-color);
 }
 
 .swiper-button-prev,
@@ -788,17 +788,17 @@ img {
 }
 
 .project__bg{
-  background-color: $first-color-second;
+  background-color: var(--first-color-second);
   padding-top: 3rem;
 }
 
 .project__title{
-  font-size: $h2-font-size;
-  margin-bottom: $mb-0-75;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
 }
 
 .project__description{
-  margin-bottom: $mb-1-5;
+  margin-bottom: var(--mb-1-5);
 }
 
 .project__title,
@@ -819,32 +819,32 @@ img {
 
 .testimonial__data{
   justify-content: space-between;
-  margin-bottom: $mb-1;
+  margin-bottom: var(--mb-1);
 }
 
 .testimonial__img{
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-right: $mb-0-75;
+  margin-right: var(--mb-0-75);
 }
 
 .testimonial__name{
-  font-size: $h3-font-size;
-  font-weight: $font-medium;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
 }
 
 .testimonial__client{
-  font-size: $small-font-size;
-  color: $text-color-light;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
 }
 
 .testimonial__description{
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-2-5);
 }
 
 .testimonial__icon-star{
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .swiper-container .swiper-pagination-testimonial{
@@ -858,41 +858,41 @@ img {
 
 .contact__information{
   display: flex;
-  margin-bottom: $mb-2;
+  margin-bottom: var(--mb-2);
 }
 
 .contact__icon{
   font-size: 2rem;
-  color: $first-color;
-  margin-right: $mb-0-75;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
 }
 
 .contact__title{
-  font-size: $h3-font-size;
-  font-weight: $font-medium;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
 }
 
 .contact__subtitle{
-  font-size: $small-font-size;
-  color: $text-color_light;
+  font-size: var(--small-font-size);
+  color: var(--text-color_light);
 }
 
 .contact__content{
-  background-color: $input-color;
+  background-color: var(--input-color);
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
 }
 
 .contact__label{
-  font-size: $smaller-font-size;
-  color: $title-color;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
 }
 .contact__input{
   width: 100%;
-  background-color: $input-color;
-  color: $text-color;
-  font-family: $body-font;
-  font-size: $normal-font-size;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
   border: none;
   outline: none;
   padding: .25rem .5rem .5rem 0;
@@ -908,17 +908,17 @@ img {
 }
 
 .footer__bg{
-  background-color: $first-color-second;
+  background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
 }
 
 .footer__title{
-  font-size: $h1-font-size;
-  margin-bottom: $mb-0-25;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
 }
 
 .footer__subtitle{
-  font-size: $small-font-size;
+  font-size: var(--small-font-size);
 }
 
 .footer__links{
@@ -927,23 +927,23 @@ img {
   row-gap: 1.5rem;
 }
 .footer__link:hover{
-    color: $first-color-lighter;
+    color: var(--first-color-lighter);
 }
 
 .footer__social{
   font-size: 1.25rem;
-  margin-right: $mb-1-5;
+  margin-right: var(--mb-1-5);
 
   &:hover{
-    color: $first-color-lighter;
+    color: var(--first-color-lighter);
   }
 }
 
 .footer__copy{
-  font-size: $smaller-font-size;
+  font-size: var(--smaller-font-size);
   text-align: center;
-  color: $text-color-light;
-  margin-top: $mb-3;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
 }
 
 .footer__title,
@@ -958,15 +958,15 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: $first-color;
+  background-color: var(--first-color);
   opacity: .8;
   padding: 0 .3rem;
   border-radius: .4rem;
-  z-index: $z-tooltip;
+  z-index: var(--z-tooltip);
   transition: .4s;
 
   &:hover{
-    background-color: $first-color-alt;
+    background-color: var(--first-color-alt);
   }
 }
 
@@ -983,16 +983,16 @@ img {
 //========== SCROLL BAR ==========
 ::-webkit-scrollbar{
   width: .60rem;
-  background-color: $scroll-bar-color;
+  background-color: var(--scroll-bar-color);
   border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: $scroll-thumb-color;
+  background-color: var(--scroll-thumb-color);
   border-radius: .5rem;
 
   &:hover{
-    background-color: $text-color-light;
+    background-color: var(--text-color-light);
   }
 }
 
@@ -1001,8 +1001,8 @@ img {
 //For small devices
 @media screen and (max-width: 350px){
   .container{
-    margin-left: $mb-1;
-    margin-right: $mb-1;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
   }
 
   .nav__menu{
@@ -1022,7 +1022,7 @@ img {
   }
 
   .skills__title{
-    font-size: $normal-font-size;
+    font-size: var(--normal-font-size);
   }
 
   .qualification__data{
@@ -1054,7 +1054,7 @@ img {
 
   .testimonial__img{
     margin-right: 0;
-    margin-bottom: $mb-0-25;
+    margin-bottom: var(--mb-0-25);
   }
 
   .testimonial__data,
@@ -1125,7 +1125,7 @@ img {
   }
 
   .nav{
-    height: cal($header-height + 1.5rem);
+    height: cal(var(--header-height + 1.5rem));
     column-gap: 1rem;
   }
 
@@ -1194,7 +1194,7 @@ img {
   }
 
   .qualification__button{
-    margin: 0 $mb-1;
+    margin: 0 var(--mb-1);
   }
 
   .qualification__sections{
@@ -1234,7 +1234,7 @@ img {
   }
 
   .project__container{
-    background-color: $first-color-second;
+    background-color: var(--first-color-second);
     border-radius: 1rem;
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
